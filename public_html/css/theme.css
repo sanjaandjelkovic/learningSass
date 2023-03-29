@@ -480,8 +480,40 @@ footer {
   background-color: #8a059e;
 }
 
-footer a, footer p {
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+footer ul li a {
+  display: block;
   color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 5px 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+footer ul li a.active, footer ul li a:hover {
+  color: #18b304;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  footer .container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container ul li a {
+    padding: 5px 20px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
