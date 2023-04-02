@@ -11,7 +11,7 @@
 }
 
 .btn-default {
-  background-color: #444444;
+  background-color: rgba(68, 68, 68, 0.2);
   color: #ffffff;
 }
 
@@ -520,14 +520,54 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
   background-color: #ffffff;
 }
 
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Mar 27, 2023, 11:25:12 PM
-    Author     : Sanja
-*/
+.course-section {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.course-section table {
+  border: 2px solid #000000;
+  border-collapse: collapse;
+}
+
+.course-section table .course-caption {
+  text-align: left;
+  font-style: italic;
+}
+
+.course-section table thead {
+  background-color: #8a059e;
+}
+
+.course-section table thead th {
+  border: 2px solid #ffffff;
+  padding: 5px 60px;
+  color: #ffffff;
+}
+
+.course-section table tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.course-section table tbody tr:hover {
+  background-color: #bbbbbb;
+}
+
+.course-section table tbody tr th, .course-section table tbody tr td {
+  border: 2px solid #000000;
+  padding: 5px 2px;
+}
+
+.course-section table tbody tr td {
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .course-section table {
+    width: 100%;
+  }
+}
+
 /*
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
