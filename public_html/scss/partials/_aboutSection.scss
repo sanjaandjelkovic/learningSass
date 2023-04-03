@@ -2,6 +2,7 @@ $about-bg: $white;
 
 
 .about-section{
-    padding: 30px 0;
-    background-color: $about-bg;
+  //  padding: 30px 0;
+   // background-color: $about-bg;
+@include styleSection(30px, 30px, $about-bg);
 }

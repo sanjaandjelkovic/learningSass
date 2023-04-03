@@ -6,7 +6,10 @@ $row-bg: $white;
 
 
 .course-section{
-    padding: 50px 0;
+    //padding: 50px 0;
+    
+    @include styleSection(50px, 50px, transparent);
+    
     width: 100%;
 
 

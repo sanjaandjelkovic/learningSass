@@ -1,9 +1,13 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Mar 27, 2023, 11:23:33 PM
-    Author     : Sanja
-*/
+$contact-bg: $white;
+
+.contact-section{
+    @include styleSection(150px, 150px, $contact-bg);
+    
+    
+    
+    
+}
+
+
+
 
