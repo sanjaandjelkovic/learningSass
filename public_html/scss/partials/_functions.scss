@@ -18,14 +18,38 @@ border-radius: 0px;
 }
 
 @mixin customRadius($rtl, $rtr, $rbr, $rbl){
-    border-radius: $rtl $rtr $rbr $rbl;
+    @if($enable-radius){
+        border-radius: $rtl $rtr $rbr $rbl;
     -moz-border-radius: $rtl $rtr $rbr $rbl;
     -webkit-border-radius: $rtl $rtr $rbr $rbl;
     -o-border-radius: $rtl $rtr $rbr $rbl;
+    }@else{
+        border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    }
+   
 }
 
 @mixin styleSection($pt, $pb, $bg){
     padding: $pt 0 $pb;
     background-color: $bg;
 }
+
+@function colorYiq($color){
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color); 
+    
+    $yiq: $r*0.299 + $g*0.587 + $b*0.114;
+    
+    @if($yiq > 129){
+        @return $black;
+    }@else{
+        @return $white;
+    }
+}
+
+
 

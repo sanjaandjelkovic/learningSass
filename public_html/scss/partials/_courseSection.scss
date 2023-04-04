@@ -28,7 +28,7 @@ $row-bg: $white;
             th{
                 border: 2px solid $table-header-border;
                 padding: 5px 60px;
-                color: $table-header-color;
+                color: colorYiq($tabel-header-bg);
             }
         }
 
